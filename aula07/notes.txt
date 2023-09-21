@@ -1,0 +1,13 @@
+Operadores Aritimeticos 
++ soma
+- subtração
+* multiplicação 
+/ divisão por resto 
+% porcentagem
+** ao quadrado
+
+  ordem de cálculo
+  ()
+  **
+  * / % quem aparecer primeiro da esquerda para direita
+  + -

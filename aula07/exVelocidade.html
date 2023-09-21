@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Velocidade</title>
+    <style>
+        body{
+            background-color: lightcoral;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h2>Problema</h2>
+    <p>Você é um engenheiro de Fórmula 1 e precisa calcular a velocidade média de um carro em uma pista.</p>
+    <ul>
+        <li>A distância total percorrida pelo carro é de 500 quilômetros.</li>
+        <li>O tempo total que o carro levou para percorrer essa distância foi de 2 horas.</li>
+        <li>Durante a corrida, o carro fez uma parada nos boxes e perdeu 30 minutos.</li>
+        <li>O carro teve uma velocidade máxima de 350 km/h em alguns trechos da pista.</li>
+        <li>O carro derrapou em uma curva e perdeu 50 km/h de velocidade.</li>
+        <li>O piloto fez um pit stop extra, que acrescentou 20 minutos ao tempo total.</li>
+    </ul>
+    <img src="charles.png">
+    <script>
+        //definindo as variaveis
+        var distancia = 500
+        var tempo = 2
+        var pitStop = 0.5 //30m em horas equivalem a 0.5
+        var velocidadeMax = 350
+        var perdaVelocidade = 50
+        var tempoExtra = 20 / 60 //em horas
+
+        //calculos gerais
+        var distanciaPercorrida = distancia
+        var tempoCorrido = tempo + tempoExtra - pitStop
+
+        //calculo de velocidade média
+        var tempoCorridoEmHoras = tempoCorrido
+        var velocidadeMedia = distanciaPercorrida / tempoCorridoEmHoras
+
+        document.write(`A resposta correta é ${velocidadeMedia}`)
+
+    </script>
+</body>
+</html>
