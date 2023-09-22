@@ -6,6 +6,12 @@ Operadores Aritimeticos
 % porcentagem
 ** ao quadrado
 
++= variavel recebe ele mesmo + algum outro ou ++ 
+-= variavel recebe ele mesmo - algum outro ou --
+*= variavel recebe ele mesmo * por algum outro
+/= variavel recebe ele mesmo / por algum outro
+**= variavel recebe ele mesmo ** de um outro numero 
+
   ordem de cálculo
   ()
   **

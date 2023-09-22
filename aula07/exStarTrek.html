@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Star Trek</title>
+    <style>
+        body{
+            background-color: rgb(146, 146, 241);
+        }
+    </style>
+</head>
+<body>
+    <h2>Calculando velocidades Warp</h2>
+
+    <script>
+ 
+        var velocidadeLuz = 5 + 3
+        var fatorDobra = velocidadeLuz % 5;
+        var impulsoAntimateria = 5 * fatorDobra ** 2;
+        var metadeRedAlert = 10 / velocidadeLuz
+        var efeitoWormHole = 6 * 2 / metadeRedAlert
+        var warpFinal = fatorDobra % efeitoWormHole + 4
+
+        //resposta 
+        document.write(`Para viajar na velocidade Warp, a nave deve atingir uma velocidade de ${warpFinal} vezes a velocidade da luz.`)
+    </script>
+</body>
+</html>
