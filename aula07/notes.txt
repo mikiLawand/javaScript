@@ -17,3 +17,30 @@ Operadores Aritimeticos
   **
   * / % quem aparecer primeiro da esquerda para direita
   + -
+  > < >=
+  !
+  &&
+  ||
+
+Operadores relacionais 
+ os resultados sempre serão em booleam
+< menor 
+> maior 
+>= maior ou igual
+<= menor ou igual 
+== igual 
+=== identico o mesmo valor e mesmo tipo
+!= diferente 
+
+Operadores lógicos
+! negação/não 
+   seguida de um resultado booleam
+&& conjunção e
+   resultado booleam 
+|| disjunção/ou 
+    só resulta em falso se os dois forem falsos
+
+Operador ternário 
+teste ?(o que acontece se for verdadeiro) true : (o que acontece se for falso) false
+  exemplo
+  média >= 7.0 ? "aprovado" : "reprovado"

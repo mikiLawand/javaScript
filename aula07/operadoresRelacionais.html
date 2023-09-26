@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Relacionais</title>
+        <style>
+            body{
+                background-color: white;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            main{
+                background-color: pink;
+                width: 90vw;
+                margin-left: 20px;
+                padding: 10px;
+                border-radius: 20px;
+            }
+        </style>
+</head>
+<body>
+    <main>
+        <h1>Exercicio Doutor Estranho</h1>
+        <p>O Doutor Estranho está praticando magia e deseja testar algumas comparações mágicas para aprimorar suas habilidades.</p>
+        <h2>Informações úteis:</h2>
+        <ul>
+            <li>Ele quer verificar se o número de portais que ele abriu é maior do que 5 </li>
+            <li>O Doutor Estranho quer ter certeza de que ele abriu pelo menos 3 portais</li>
+            <li>Ele também deseja verificar se o tempo que ele gastou em meditação é menor ou igual a 30 minutos </li>
+            <li>Para uma experiência mágica especial, ele quer garantir que o número de portais seja igual a 7 </li>
+            <li>Por fim, ele quer verificar se o valor de uma joia do infinito é diferente do número de portais que ele abriu </li>
+        </ul>
+        <script>
+            //variaveis
+            var portais = 6
+            var minimoPortais = 3
+            var tempoMeditacao = 25
+            var portaisEspeciais = 7 
+            var joiaInfinito = 6
+
+            //cálculos
+            var portaisAbertos = portais > 5 //verificando se o numero de portais abertos é maior que 5 
+
+            var min3Portais = portais >= minimoPortais //verificando se o numero de portais abertos é maior ou igual a 3
+
+            var tempoMinMeditacao = tempoMeditacao <= 30 //verificando se o tempo de meditação foi menor ou igual a 30m
+
+            var portaisEspeciaisAbertos = portais === portaisEspeciais //verificando se o numero de portais especiais abertos é identico ao numero de portais 
+
+            var diferencaJoiaisPortais = joiaInfinito != portais //verificando se o numero de joias do infinito é diferente do numero de portais 
+
+            //respostas 
+            document.write(`O número de portais é menor do que 5? <br>R:${portaisAbertos} <br>`)
+            document.write(`Foram abertos no minímo 3 portais? <br>R:${min3Portais} <br>`)
+            document.write(`Ele meditou por no minímo 30 minutos? <br>R:${tempoMinMeditacao} <br>`)
+            document.write(`Foram abertos 7 portais? <br>R:${portaisEspeciaisAbertos} <br>`)
+            document.write(`O numero de joias do infinito é diferente do número de portais abertos? <br>R:${diferencaJoiaisPortais} <br>`)
+
+        </script>
+    </main>
+</body>
+</html>

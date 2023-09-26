@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Aritméticos</title>
+    <style>
+        body{
+            background-color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        main{
+            background-color: pink;
+            width: 90vw;
+            margin-left: 20px;
+            padding: 10px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Exercicio Júpiter</h1>
+        <h2>Calcule:</h2>
+        <ul>
+            <li>O raio de Júpiter</li>
+            <li>A aréa da superficie de Júpiter</li>
+            <li>A massa de Júpiter em relação a terra</li>
+        </ul>
+        <!--JavaScript-->
+        <script>
+
+            //variaveis 
+            var diametro = 139822
+            var distanciaMedia = 778500000
+
+            //cálculos 
+
+            //calculando o raio de jupiter
+            var raio = diametro / 2 // o raio recebe o valor do diametro dividido pela sua metade 
+
+            //calculando a area total da superficie de jupiter
+            var areaSuperficie = 4 * Math.PI * (raio ** 2) // a area da superficie recebe o valor da formula da area superficial de uma esfera 
+              //o valor do raio ao quadrado 
+                  //4 vezes o valor de pi vezes o valor do raio ao quadrado
+
+            //calculando a massa de jupiter em relação a terra
+            var massaTerra = 5.972e24
+            var massaJupiter = 1.898e27
+            var massaRelativa = massaJupiter / massaTerra
+            //a massaRelativa recebe o valor da massaJupiter dividida pelo valor da massaTerra
+
+            //exibindo os resultados 
+            document.write(`Raio de Júpiter: ${raio} <br>`)
+            document.write(`Aréa da superficie de Júpiter: ${areaSuperficie} <br>`)
+            document.write(`Massa da Júpiter em relação a terra: ${massaRelativa} <br>`)
+        </script>
+    </main>
+</body>
+</html>
