@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Lógicos</title>
+</head>
+<body>
+    <h1>Balada</h1>
+<script>
+    //variaveis 
+    var conviteValido = true;
+
+    //solicitando a idade do usuario
+    var idade = window.prompt('Digite a sua idade: ')
+
+    //lógica
+    if (idade >= 18 && conviteValido) {
+    //se a idade for maior ou igual a 18 e o convite for valido
+        document.write("Parabéns! Você está autorizado a entrar na balada.")
+        //pode entrar na balada
+    } else {
+    //senão
+        document.write("Desculpe, você não pode entrar na balada.")
+        //ele não pode 
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+DOM (document object model)
+ é um conjunto de objetos dentro do navegador 
+
+arvore DOM 
+window = janela do navegador 
+-location = localização do site 
+-document = documento atual 
+  html 
+    head 
+      meta 
+      title
+    body
+      h1
+      p
+      p
+      div 
+-history = guarda o histórico 

@@ -1,3 +1,6 @@
+document.write('') 
+escreve uma mensagem na tela html
+
 Operadores Aritimeticos 
 + soma
 - subtração
