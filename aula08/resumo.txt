@@ -3,8 +3,9 @@ DOM (document object model)
 
 arvore DOM 
 window = janela do navegador 
--location = localização do site 
--document = documento atual 
+  -location = localização do site 
+  -document = documento atual 
+  -history = guarda o histórico
   html 
     head 
       meta 
@@ -14,4 +15,3 @@ window = janela do navegador
       p
       p
       div 
--history = guarda o histórico 
