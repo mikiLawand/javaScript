@@ -1,5 +1,5 @@
 DOM (document object model)
- é um conjunto de objetos dentro do navegador 
+ é um conjunto de objetos que definem o estilo do seu site dentro do navegador 
 
 arvore DOM 
 window = janela do navegador 
