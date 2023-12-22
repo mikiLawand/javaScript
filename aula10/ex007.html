@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area {
+            font: normal 20pt Arial;
+            background-color: rgb(250, 250, 170);
+            color: hotpink;
+            width: 300px;
+            height: 300px;
+            /*para deixar o texto no centro da div*/
+            line-height: 300px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!--quando o mouse clicar a função clicar vai ser ativada-->
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        Interaja 
+    </div> 
+    
+    <script>
+
+        var a = window.document.getElementById('area')
+        /*criando objeto a aqui porque todas as funções vão usar ele*/
+
+        /*ou ao inves de colocar os eventos na div 
+        a.addEventListener('clic', clicar)
+        */
+
+        function clicar() {
+            var a = window.document.getElementById('area')
+            /*criando objeto a*/
+            a.innerText = 'Clicou <3'
+            /*var a recebe novo texto*/
+            a.style.backgroundColor = 'lightblue'
+        }
+
+        function entrar() {
+            a.innerText = 'Entrou ;)'
+        }
+
+        function sair() {
+            a.innerText = 'Saiu :('
+            a.style.backgroundColor = 'violet'
+        }
+    </script>
+</body>
+</html>
