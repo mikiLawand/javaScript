@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fórmula 1</title>
+</head>
+<body>
+    <h1>Sistema de Equipes</h1>
+    Para qual equipe você torce?<input type="text" name="txtequi" id="txtequi">
+    <input type="button" value="Enviar" onclick="mostrar()">
+    <div id="resultado">
+
+    </div>
+    <script>
+        function mostrar() {
+            var equipe = window.document.getElementById('txtequi')
+            var res = window.document.querySelector('div#resultado')
+            var equipef1 = String(txtequi.value)
+            if (equipef1 === 'Ferrari') {
+                res.innerHTML += `<p>Como anda a sua terapia? ;)</p>`
+            }
+            res.innerHTML += `<p>Você escolheu torcer para <strong>${equipef1}</strong></p>`
+        }
+    </script>
+</body>
+</html>
