@@ -1,0 +1,25 @@
+body{
+    background-color: #FCE4D8;
+    font: normal 16pt Arial ;
+}
+
+header{
+    color: #F75590;
+    text-align: center;
+}
+
+section{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    border-radius: 20px;
+    padding: 16px;
+    width: 390px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.347);
+}
+
+footer{
+color:#F75590;
+font-style: italic;
+text-align: center;
+}
