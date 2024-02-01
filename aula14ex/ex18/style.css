@@ -1,25 +1,25 @@
 body{
-    background-color: #FCE4D8;
+    background-color: #DDCAD9;
     font: normal 16pt Arial ;
 }
 
 header{
-    color: #F75590;
+    color: #53599A;
     text-align: center;
 }
 
 section{
     font-family: monospace;
-    background-color: #FBD87F;
+    background-color: #E5E9EC;
     border-radius: 20px;
     padding: 16px;
-    width: 500px;
+    width: 250px;
     margin: auto;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.347);
 }
 
 footer{
-color:#F75590;
+color:#53599A;
 font-style: italic;
 text-align: center;
 }
