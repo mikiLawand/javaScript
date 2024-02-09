@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 002</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #bot {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 200px;
+            padding: 10px 20px;
+            background-color: #E1F25E;
+            cursor: pointer;
+            border-radius: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Desafio Boas-vindas</h1>
+    <div id="bot" onclick="solicitarInformacoes()">Inicie o desafio</div>
+
+    <script>
+        function solicitarInformacoes() {
+            let nome = window.prompt('Por favor,digite seu nome:')
+
+            //verifica se o nome foi inserido
+            if (nome !== null && nome !== '') {
+                let idade = window.prompt(`Olá ${nome}! Agora digite sua idade:`)
+                //verifica se a idade foi inserida
+                if (idade !== null && idade !== '') {
+                    window.alert(`Acabei de conhecer ${nome}, que tem ${idade} de idade!`)
+                } else {
+                    window.alert('Por favor ,insira sua idade.')
+                }
+            } else {
+                window.alert('Por favor, insira seu nome.')
+            }
+        }
+    </script>
+</body>
+</html>
