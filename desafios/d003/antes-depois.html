@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 003</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #bot {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 200px;
+            padding: 10px 20px;
+            background-color: #CC84CD;
+            cursor: pointer;
+            border-radius: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Desafio Antes e Depois</h1>
+    <div id="bot" onclick="solicitarNumero()">Antecessor e Sucessor</div>
+
+    <script>
+        function solicitarNumero() {
+            let numero = Number.parseInt(window.prompt('Digite um número:'))
+
+            //verifica se um numero foi inserido 
+            if (!isNaN(numero)) {
+                let antecessor = numero - 1
+                let sucessor = numero + 1
+                // /n para quebra de linha 
+                alert(`O número antecessor a ${numero} é ${antecessor}.\nO número sucessor é ${sucessor}.`) 
+            } else {
+                alert('O número inserido não é um número inteiro!')
+            }
+            }
+    </script>
+</body>
+</html>
