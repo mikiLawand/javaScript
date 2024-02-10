@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 005</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #bot {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100px;
+            padding: 10px 20px;
+            background-color: #F28A80;
+            cursor: pointer;
+            border-radius: 10px;
+            text-align: center;   
+        }
+
+        .res {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.3em;
+        }
+
+        #res2 {
+            color: #F257A0;
+        }
+
+        #res3 {
+            color: #0388A6;
+        }
+
+        #res4 {
+            color: #025918;
+        }
+
+        #res5 {
+            color: #F2AE30;
+        }
+
+        #res6 {
+            color: #F22F1D;
+        }
+
+        #res7 {
+            color: #5306BF;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Conversor de Medidas</h1>
+    <div id="bot" onclick="converterMedida()">Converter</div>
+    <div class="res" id="res1"></div>
+    <div class="res" id="res2"></div>
+    <div class="res" id="res3"></div>
+    <div class="res" id="res4"></div>
+    <div class="res" id="res5"></div>
+    <div class="res" id="res6"></div>
+    <div class="res" id="res7"></div>
+
+    <script>
+        function converterMedida() {
+            //solicita distancia em metros
+            let distm = Number.parseFloat(window.prompt('Digite uma distância em metros (m):'))
+
+            document.getElementById('res1').innerHTML =(`<h2>A distância de ${distm} metros, corresponde a...</h2><br>`)
+
+            //converte o m para km
+            let distkm = distm / 1000
+            //exibe o resultado
+            document.getElementById('res2').innerHTML = (`${distkm} quilômetros (Km).<br>`)
+
+            //m para hectametros 
+            let disth = distm / 100
+            document.getElementById('res3').innerHTML += (`${disth}hectametros (Hm).<br>`)
+
+            //m para decametros
+            let distd = distm / 10
+            document.getElementById('res4').innerHTML += (`${distd} dêcametros (Dam).<br>`)
+
+            //m para decimetros 
+            let distdm = distm * 10 
+            document.getElementById('res5').innerHTML += (`${distdm} decimetros (dm).<br>`)
+
+            //m para centimetros metro * 100
+            let distcm = distm * 100 
+            document.getElementById('res6').innerHTML += (`${distcm} centimetros (cm).<br>`)
+
+            //m para milimetos metro * 1000
+            let distml = distm * 1000 
+            document.getElementById('res7').innerHTML += (`${distml} milimetros (mm).`)
+
+        }
+    </script>
+</body>
+</html>
