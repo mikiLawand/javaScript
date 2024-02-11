@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 008</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #bot {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 150px;
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #daf98e;
+            cursor: pointer;
+            border-radius: 10px;
+            text-align: center; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Desafio Desconto de 10%</h1>
+    <div id="bot" onclick="calcularDesconto()">Desconto de 10%</div>
+    <div id="saida"></div>
+
+    <script>
+        function calcularDesconto() {
+
+            //pergunta qual é o produto
+            let produto = window.prompt('Qual o produto que você deseja comprar?')
+
+            //pergunta o preço 
+            let preco = Number.parseFloat(window.prompt(`Qual o preço do ${produto}?`))
+
+            //mensagem de saida
+            document.getElementById('saida').innerHTML = `<h2>Calculando o desconto de 10% para ${produto}...</h2><br>`
+
+            document.getElementById('saida').innerHTML += `O preço original do produto era ${preco}.<br>`
+
+            let desconto = 10 / 100 * preco
+            document.getElementById('saida').innerHTML += `Você acaba de ganhar ${desconto} de desconto!<br>`
+
+            let precoDesc = preco - desconto 
+            document.getElementById('saida').innerHTML += `No fim você vai pagar ${precoDesc} no produto ${produto}.<br>`
+        }
+    </script>
+</body>
+</html>

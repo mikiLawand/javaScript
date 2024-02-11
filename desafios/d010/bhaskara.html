@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 010</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        #bot {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100px;
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #daf98e;
+            cursor: pointer;
+            border-radius: 10px;
+            text-align: center; 
+        }
+
+        #saida {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <h1>Desafio de Bahskara</h1>
+    <div id="bot" onclick="calcularBaskara()">Calcular</div>
+    <div id="mensagem">
+        Considerando uma equação no formato <b>ax²+bx+c=0</b>, aperte o botão acima para calcular o valor de Δ.
+    </div>
+    <div id="saida"></div>
+
+    <script src="calculoBahaskara.js"></script>
+</body>
+</html>
